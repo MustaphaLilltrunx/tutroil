@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #eaeaea;
+}
+
+main {
+    padding: 30px 50px;
+}
+
+h2 {
+    font-family: "Roboto", cursive;
+    margin: 5px;
+}
+
+h4 {
+    font-family: "Roboto", cursive;
+    margin: 10px;
+}
+
+p {
+    font-family: "Roboto", cursive;
+    margin: 10px;
+    text-align: justify;
+    padding-right: 70px;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+}
+
+h5 {
+    margin-right: 20px;
+    margin-left: 5px;
+    text-decoration-line: underline;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #231f20;
+}
+
+.article img {
+    margin: 10px;
+    border-radius: 5%;
+    object-fit: cover;
+    align-items: center;
+    width: 300;
+}
+
+@media screen and (max-width: 600px) {
+    .article, .article a {
+        flex-direction: column;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+        padding-right: 0px;
+    }
+
+    .link {
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+}
+
+main > * {
+    flex: 1 1;
+}
+
+.contact-info {
+    background-color: #231f20;
+    color: #eaeaea;
+    align-items: center;
+    padding: 30px;
+}
+
+.phone, .email, .instagram, .linkedin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.detail {
+    padding: 0px 10px;
+}
+
+.fill-form {
+    background-color: #ad974f;
+    color: #231f20;
+    align-items: center;
+    padding: 30px;
+    font-weight: bold;
+}
+
+.col-25 {
+    padding: 5px 0px;
+}
+
+input, textarea {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #231f20;
+    color: #eaeaea;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.page {
+    margin-top: 50px;
+}
+
+.page > * {
+    padding: 0px 10px;
+    text-align: right;
+}
+
+a {
+    color: #231f20;
+    font-size: medium;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .page {
+        margin-top: 10px;
+    }
+}
